@@ -49,7 +49,7 @@ class BBbird:
         message = self.client.messages.create(
             messaging_service_sid='MG3e9a0ad3158a41e5b962b49f90eea3d0',
             body=f'Osprey:\n'+text,
-            to='+15093922538'
+            to=topSecretInfo.phone_number
         )
         print('Message sent. ID:', message.sid)
 
